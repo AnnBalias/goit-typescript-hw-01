@@ -1,5 +1,4 @@
-// Завдання 7 
-
+// Завдання 7
 // Виконуйте це завдання у файлі src/basic/7.ts.
 
 // У вас є два об'єкти:
@@ -14,7 +13,6 @@
 //     updateAt: new Date('2021-05-01'),
 //   }
 // }
-
 // const page2 = {
 //   title: 'Python or Js',
 //   likes: 5,
@@ -23,3 +21,14 @@
 // }
 
 // Створіть новий тип даних, який підходить для цих двох об'єктів.
+
+type Page = {
+  title: string;
+  likes: number;
+  accounts: string[];
+  status: "open" | "close";
+  details?: {
+    createAt: Date;
+    updateAt: Date;
+  };
+};
